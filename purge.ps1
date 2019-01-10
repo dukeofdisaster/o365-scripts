@@ -21,7 +21,7 @@ If ($purge -eq 'Y') {i
 	new-compliancesearchaction -searchname $name -purge -purgetype harddelete
 }
 Else {
-	write-host "Restart script to try and execute purge again
+	write-host "Restart script to try and execute purge again"
 }
 $terminate = 1
 Do
