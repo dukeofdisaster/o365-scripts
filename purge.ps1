@@ -14,10 +14,10 @@ write-host "
 $purge = read-host -prompt "[-] Do you want to issue a purge for the item/s found above?  y/n" 
 
 If ($purge -eq 'Y') {i
-	$confirm = read-host -prompt "[-] Hit enter to confirm purge, else CTRL-C to terminate
+	$confirm = read-host -prompt "[-] Hit enter to confirm purge, else CTRL-C to terminate"
 	new-compliancesearchaction -searchname $name -purge -purgetype harddelete
 } ElseIf ($purge -eq 'y') {
-	$confirm = read-host -prompt "[-] Hit enter to confirm purge, else CTRL-C to terminate
+	$confirm = read-host -prompt "[-] Hit enter to confirm purge, else CTRL-C to terminate"
 	new-compliancesearchaction -searchname $name -purge -purgetype harddelete
 }
 Else {
